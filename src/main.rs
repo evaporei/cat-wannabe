@@ -7,6 +7,10 @@ use std::io::prelude::*;
 fn main() {
     let args: Vec<String> = env::args().collect();
 
+    // pega argumentos
+    // para cada argumento abre arquivo
+    // para cada arquivo printa conteúdo
+
     if let Some(file_name) = args.get(1) {
         match File::open(file_name) {
             Ok(mut file) => {
